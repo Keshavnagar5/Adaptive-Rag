@@ -21,3 +21,4 @@ streamlit
 requests
 langchain-qdrant
 python-multipart
+langchain-google-genai==2.1.10
