@@ -29,4 +29,4 @@ st.write(
 )
 
 if st.button("🚀 Start Chat", use_container_width=True):
-    st.switch_page("pages/Chat.py")
+    st.switch_page("pages/chat.py")
