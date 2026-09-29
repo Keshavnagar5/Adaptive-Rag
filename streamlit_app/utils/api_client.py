@@ -9,8 +9,16 @@ import requests
 logger = logging.getLogger(__name__)
 
 # FastAPI RAG backend
-PYTHON_BASE_URL = "http://127.0.0.1:8000"
+# PYTHON_BASE_URL = "http://127.0.0.1:8000"
 
+
+
+import os
+
+PYTHON_BASE_URL = os.getenv(
+    "PYTHON_BASE_URL",
+    "http://127.0.0.1:8000"
+)
 
 def query_backend(query: str, session_id: str) -> str:
     """
